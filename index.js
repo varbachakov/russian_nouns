@@ -1,12 +1,3 @@
-# Russian Nouns JS
-
-A JavaScript function that declines nouns.
-
-### PROPS
-
-1. ***number*** - the number under which the noun is selected
-2. ***words*** - an array of strings, necessarily consisting of 3 elements, which is a declension for numbers
-```
 function _getNounNumber(number) {
     const n = Math.abs(number);
     const n100 = n % 100;
@@ -32,11 +23,3 @@ export function getNoun(number, words) {
             return words[2];
     }
 }
-
-
-Example:
-
-const subscriberNoun = getNoun(5, ['подписчик', 'подписчика', 'подписчиков']);
-
-console.log(`5 ${subscriberNoun}`); // 5 подписчиков
-```
